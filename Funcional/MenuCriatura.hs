@@ -62,11 +62,11 @@ mainLoop index = do
                                    cmd -> index
 
     if command =='f' && index == 5 then exitSuccess
-    else if command =='f' && index == 4 then Crdt.main
-    else if command =='f' && index == 3 then Crdt.main
-    else if command == 'f' && index == 2 then Crdt.main   
-    else if command =='f' && index == 1 then Crdt.main 
-    else if command == 'f' && index == 0 then Crdt.main 
+    else if command =='f' && index == 4 then Mnbt.main
+    else if command =='f' && index == 3 then Mnbt.main
+    else if command == 'f' && index == 2 then Mnbt.main   
+    else if command =='f' && index == 1 then Mnbt.main 
+    else if command == 'f' && index == 0 then Mnbt.main 
     else putStrLn ""       -- continua no menu
 
     mainLoop newIndex
